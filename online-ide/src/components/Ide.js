@@ -33,7 +33,7 @@ function Ide() {
       const codeToExecute = { code };
 
       const response = await axios.post(
-        "http://localhost:8080/api/auth/execute",
+        "https://java-ide-c9rl.onrender.com/api/auth/execute",
         codeToExecute,
         {
           headers: {

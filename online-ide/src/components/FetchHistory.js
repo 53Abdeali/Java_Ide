@@ -19,7 +19,7 @@ function FetchHistory() {
   const fetchHistory = async (token) => {
     try {
       const response = await axios.get(
-        "http://localhost:8080/api/auth/history",
+        "https://java-ide-c9rl.onrender.com/api/auth/history",
         {
           headers: {
             Authorization: `Bearer ${token}`,

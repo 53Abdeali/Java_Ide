@@ -23,7 +23,7 @@ function Register() {
     setError("");
     e.preventDefault();
     try {
-      await axios.post("http://localhost:8080/api/auth/register", {
+      await axios.post("https://java-ide-c9rl.onrender.com/api/auth/register", {
         username,
         password,
       });
