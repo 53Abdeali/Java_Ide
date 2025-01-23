@@ -24,7 +24,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @RestController
 @RequestMapping("/api/auth")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://javaz-online.netlify.app")
 public class CodeExecutionController {
 
     private final CodeHistoryService codeHistoryService;

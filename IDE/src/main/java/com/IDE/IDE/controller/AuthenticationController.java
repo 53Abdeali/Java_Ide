@@ -8,6 +8,7 @@ import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,6 +22,7 @@ import com.IDE.IDE.service.CustomerUserDetailService;
 
 @RestController
 @RequestMapping("/api/auth")
+@CrossOrigin(origins = "https://javaz-online.netlify.app")
 public class AuthenticationController {
     @Autowired
     private UserRepository userRepository;
